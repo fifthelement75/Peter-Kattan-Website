@@ -73,6 +73,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://peterkattan.com", // Replace with your actual domain
   },
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

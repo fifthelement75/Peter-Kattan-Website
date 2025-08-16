@@ -197,7 +197,7 @@ export default function HomePage() {
                 playsInline
                 className="absolute inset-0 w-full h-full object-cover opacity-20 my-0"
               >
-                <source src="/videos/216005_small.mp4" type="video/mp4" />
+                <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/216005_small-rfSLoO1yWUDMr9QmgIH1ZRWZznN4sx.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -698,7 +698,7 @@ export default function HomePage() {
               playsInline
               className="absolute inset-0 w-full object-cover opacity-20 z-0 my-0 h-full border-0"
             >
-              <source src="/videos/6266-190550868_medium.mp4" type="video/mp4" />
+              <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6266-190550868_medium-JopA1GXzKXSbeTuaHGFsUfhxvsVLnZ.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             {/* Content Overlay */}
