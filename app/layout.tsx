@@ -1,7 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Suspense } from "react"
 import "./globals.css"
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -45,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Peter Kattan",
     images: [
       {
-        url: "/images/og-image.png", // You'll need to provide this image
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Peter Kattan - Product Design Strategy Expert",
@@ -58,7 +60,7 @@ export const metadata: Metadata = {
     description:
       "I help startups and scale-ups build successful product design operations, empower high-performing teams, and optimize user-centric strategies with GenAI integration.",
     creator: "@fifth_element75",
-    images: ["/images/og-image.png"], // Same image as Open Graph
+    images: ["/images/og-image.png"],
   },
   icons: {
     icon: [
@@ -126,7 +128,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+        <Analytics />
+      </body>
     </html>
   )
 }

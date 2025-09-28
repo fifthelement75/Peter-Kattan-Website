@@ -20,7 +20,7 @@ import {
   Eye,
   Tag,
   SlidersHorizontal,
-  Handshake,
+  Users2,
   User,
   BookOpen,
   TrendingUp,
@@ -436,7 +436,7 @@ export default function HomePage() {
                   <FadeIn delay={200}>
                     <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                       <CardHeader className="flex flex-col items-center flex-grow">
-                        <Handshake className="text-purple-400 mb-4" size={40} />
+                        <Users2 className="text-purple-400 mb-4" size={40} /> {/* Updated icon */}
                         <CardTitle className="text-xl font-semibold text-purple-300">Tailored Approach</CardTitle>
                       </CardHeader>
                       <CardContent className="mt-auto">
