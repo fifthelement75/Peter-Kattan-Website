@@ -129,6 +129,9 @@ export default function HomePage() {
               >
                 Services
               </Link>
+              <Link href="/work" className="hover:text-purple-400 transition-colors">
+                Work
+              </Link>
               <Link
                 href="#contact"
                 onClick={(e) => handleScrollToSection(e, "contact")}
@@ -170,6 +173,13 @@ export default function HomePage() {
                       Services
                     </Link>
                     <Link
+                      href="/work"
+                      onClick={() => setIsSheetOpen(false)}
+                      className="text-xl hover:text-purple-400 transition-colors"
+                    >
+                      Work
+                    </Link>
+                    <Link
                       href="#contact"
                       onClick={(e) => handleScrollToSection(e, "contact")}
                       className="text-xl hover:text-purple-400 transition-colors"
@@ -203,7 +213,7 @@ export default function HomePage() {
             </div>
             <div className="relative z-10 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-1000">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-                I Build Successful Product Design Operations and Team structures
+                I Build Successful Product Design Operations and Team Structures
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
                 I guide visionary startups and scale-ups in architecting user-centric products, empowering
@@ -226,7 +236,7 @@ export default function HomePage() {
           {/* About Section */}
           <section id="about" className="relative py-20 bg-gray-950/90 rounded-lg shadow-2xl overflow-hidden">
             <div
-              className="absolute inset-0 z-0"
+              className="absolute inset-0 z-0 bg-purple-100 text-purple-100"
               style={{
                 backgroundImage: 'url("/images/about-parallax-bg.png")',
                 backgroundSize: "cover",
@@ -250,14 +260,14 @@ export default function HomePage() {
                 <FadeIn direction="right" delay={400}>
                   <div>
                     <h2 className="text-4xl font-bold mb-6 text-purple-400">About Me</h2>
-                    <p className="text-lg text-gray-300 mb-4">
+                    <p className="text-lg mb-4 text-neutral-600">
                       With a proven track record in leading transformative design initiatives and a deep understanding
                       of emerging technologies, I partner with ambitious startups and scale-ups to navigate complex
                       challenges and seize new opportunities. My passion lies in bridging the gap between innovative
                       ideas and impactful execution, fostering environments where design excellence and technological
                       foresight converge.
                     </p>
-                    <p className="text-lg text-gray-300">
+                    <p className="text-lg text-neutral-600">
                       As a design leader and tech visionary, I empower organizations to not only adapt but thrive in the
                       rapidly evolving digital landscape. I believe in leveraging the power of AI to unlock
                       unprecedented efficiencies, drive market differentiation, and cultivate high-performing teams
@@ -268,10 +278,10 @@ export default function HomePage() {
               </div>
               {/* Clients & Organizations Section - Moved below the grid */}
               <FadeIn delay={600}>
-                <div className="py-8 rounded-lg bg-purple-100 mt-16 mr-0 border-0 px-4">
+                <div className="py-8 rounded-lg bg-purple-100 mr-0 border-0 px-6 ml-0 mt-20 mb-0">
                   {" "}
                   {/* Added px-4 for horizontal padding */}
-                  <h3 className="text-3xl font-semibold text-center mb-8 text-purple-500">
+                  <h3 className="text-3xl font-semibold text-center mb-8 text-purple-400">
                     Clients & Organizations I worked with
                   </h3>
                   <LogoCarousel
@@ -308,18 +318,18 @@ export default function HomePage() {
             ></div>
             <div className="relative z-10 container mx-auto px-4">
               <FadeIn>
-                <h2 className="text-4xl font-bold text-center mb-12 text-purple-400">What I Offer</h2>
+                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">What I Offer</h2>
               </FadeIn>
 
               <div className="mb-16">
                 <FadeIn delay={200}>
-                  <h3 className="text-3xl font-semibold text-center mb-8 text-purple-300">I help teams become...</h3>
+                  <h3 className="text-3xl font-semibold text-center mb-8 text-purple-400">I help teams become...</h3>
                 </FadeIn>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                   <FadeIn delay={300}>
                     <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105">
                       <CardContent className="flex flex-col items-center justify-center p-0">
-                        <Zap className="text-purple-400 mb-3" size={32} />
+                        <Zap className="mb-3 text-purple-300" size={32} />
                         <CardTitle className="text-xl font-semibold text-purple-300 mb-2">Streamlined</CardTitle>
                         <p className="text-gray-300 text-sm">
                           Enhancing productivity, efficacy, and results through optimized workflows.
@@ -328,9 +338,9 @@ export default function HomePage() {
                     </Card>
                   </FadeIn>
                   <FadeIn delay={400}>
-                    <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105">
+                    <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 py-8">
                       <CardContent className="flex flex-col items-center justify-center p-0">
-                        <Sparkles className="text-purple-400 mb-3" size={32} />
+                        <Sparkles className="mb-3 text-purple-300" size={32} />
                         <CardTitle className="text-xl font-semibold text-purple-300 mb-2">Evolved</CardTitle>
                         <p className="text-gray-300 text-sm">
                           Cultivating a mindset of continuous improvement and adaptability.
@@ -339,9 +349,9 @@ export default function HomePage() {
                     </Card>
                   </FadeIn>
                   <FadeIn delay={500}>
-                    <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105">
+                    <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 py-8">
                       <CardContent className="flex flex-col items-center justify-center p-0">
-                        <Link2 className="text-purple-400 mb-3" size={32} />
+                        <Link2 className="mb-3 text-purple-300" size={32} />
                         <CardTitle className="text-xl font-semibold text-purple-300 mb-2">Aligned</CardTitle>
                         <p className="text-gray-300 text-sm">
                           Infusing transparency and visibility for better, faster collaboration.
@@ -352,7 +362,7 @@ export default function HomePage() {
                   <FadeIn delay={600}>
                     <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105">
                       <CardContent className="flex flex-col items-center justify-center p-0">
-                        <ShieldCheck className="text-purple-400 mb-3" size={32} />
+                        <ShieldCheck className="mb-3 text-purple-300" size={32} />
                         <CardTitle className="text-xl font-semibold text-purple-300 mb-2">Confident</CardTitle>
                         <p className="text-gray-300 text-sm">
                           Empowering teams with the tools and knowledge to make informed decisions.
@@ -364,13 +374,13 @@ export default function HomePage() {
               </div>
 
               <FadeIn delay={700}>
-                <div className="bg-gray-800 border border-gray-700 rounded-lg p-8 shadow-xl mb-16">
-                  <h3 className="text-3xl font-semibold text-center mb-8 text-purple-300">
+                <div className="bg-gray-800 border border-gray-700 rounded-lg p-8 shadow-xl py-14 mb-11">
+                  <h3 className="text-3xl font-semibold text-center mb-8 text-purple-400">
                     Superior to a full-time hire
                   </h3>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
                     <div className="flex items-start space-x-4">
-                      <DollarSign className="text-purple-400 flex-shrink-0 mt-1" size={24} />
+                      <DollarSign className="flex-shrink-0 mt-1 text-purple-300" size={24} />
                       <div>
                         <h4 className="text-xl font-semibold text-purple-300">Amazing ROI</h4>
                         <p className="text-gray-300 text-sm">
@@ -379,7 +389,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
-                      <Rocket className="text-purple-400 flex-shrink-0 mt-1" size={24} />
+                      <Rocket className="flex-shrink-0 mt-1 text-purple-300" size={24} />
                       <div>
                         <h4 className="text-xl font-semibold text-purple-300">Rapid Onboarding</h4>
                         <p className="text-gray-300 text-sm">
@@ -388,7 +398,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
-                      <Target className="text-purple-400 flex-shrink-0 mt-1" size={24} />
+                      <Target className="flex-shrink-0 mt-1 text-purple-300" size={24} />
                       <div>
                         <h4 className="text-xl font-semibold text-purple-300">Specialised</h4>
                         <p className="text-gray-300 text-sm">
@@ -397,7 +407,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
-                      <Eye className="text-purple-400 flex-shrink-0 mt-1" size={24} />
+                      <Eye className="flex-shrink-0 mt-1 text-purple-300" size={24} />
                       <div>
                         <h4 className="text-xl font-semibold text-purple-300">External View</h4>
                         <p className="text-gray-300 text-sm">
@@ -406,7 +416,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
-                      <Tag className="text-purple-400 flex-shrink-0 mt-1" size={24} />
+                      <Tag className="flex-shrink-0 mt-1 text-purple-300" size={24} />
                       <div>
                         <h4 className="text-xl font-semibold text-purple-300">Fixed Fees</h4>
                         <p className="text-gray-300 text-sm">
@@ -415,7 +425,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
-                      <SlidersHorizontal className="text-purple-400 flex-shrink-0 mt-1" size={24} />
+                      <SlidersHorizontal className="flex-shrink-0 mt-1 text-purple-300" size={24} />
                       <div>
                         <h4 className="text-xl font-semibold text-purple-300">Flexible Service</h4>
                         <p className="text-gray-300 text-sm">
@@ -428,7 +438,7 @@ export default function HomePage() {
               </FadeIn>
 
               {/* How It Works Section - Now part of What I Offer */}
-              <div className="py-20 rounded-lg shadow-2xl overflow-hidden">
+              <div className="rounded-lg shadow-2xl overflow-hidden py-16 shadow-none">
                 <FadeIn>
                   <h3 className="text-4xl font-bold text-center mb-12 text-purple-400">How It Works</h3>
                 </FadeIn>
@@ -436,7 +446,7 @@ export default function HomePage() {
                   <FadeIn delay={200}>
                     <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                       <CardHeader className="flex flex-col items-center flex-grow">
-                        <Users2 className="text-purple-400 mb-4" size={40} /> {/* Updated icon */}
+                        <Users2 className="mb-4 text-purple-300" size={40} /> {/* Updated icon */}
                         <CardTitle className="text-xl font-semibold text-purple-300">Tailored Approach</CardTitle>
                       </CardHeader>
                       <CardContent className="mt-auto">
@@ -449,7 +459,7 @@ export default function HomePage() {
                   <FadeIn delay={300}>
                     <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                       <CardHeader className="flex flex-col items-center flex-grow">
-                        <User className="text-purple-400 mb-4" size={40} />
+                        <User className="mb-4 text-purple-300" size={40} />
                         <CardTitle className="text-xl font-semibold text-purple-300">1-to-1 Sessions</CardTitle>
                       </CardHeader>
                       <CardContent className="mt-auto">
@@ -462,7 +472,7 @@ export default function HomePage() {
                   <FadeIn delay={400}>
                     <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                       <CardHeader className="flex flex-col items-center flex-grow">
-                        <BookOpen className="text-purple-400 mb-4" size={40} />
+                        <BookOpen className="mb-4 text-purple-300" size={40} />
                         <CardTitle className="text-xl font-semibold text-purple-300">Takeaway Exercises</CardTitle>
                       </CardHeader>
                       <CardContent className="mt-auto">
@@ -473,7 +483,7 @@ export default function HomePage() {
                   <FadeIn delay={500}>
                     <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                       <CardHeader className="flex flex-col items-center flex-grow">
-                        <TrendingUp className="text-purple-400 mb-4" size={40} />
+                        <TrendingUp className="mb-4 text-purple-300" size={40} />
                         <CardTitle className="text-xl font-semibold text-purple-300">Progress Tracking</CardTitle>
                       </CardHeader>
                       <CardContent className="mt-auto">
@@ -486,7 +496,7 @@ export default function HomePage() {
                   <FadeIn delay={600}>
                     <Card className="bg-gray-800 border-gray-700 text-gray-50 text-center p-6 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                       <CardHeader className="flex flex-col items-center flex-grow">
-                        <Users className="text-purple-400 mb-4" size={40} />
+                        <Users className="mb-4 text-purple-300" size={40} />
                         <CardTitle className="text-xl font-semibold text-purple-300">Up to Four Apprentices</CardTitle>
                       </CardHeader>
                       <CardContent className="mt-auto">
@@ -501,7 +511,7 @@ export default function HomePage() {
 
               {/* My Approach Section - Moved here */}
               <FadeIn delay={800}>
-                <div className="py-20 rounded-lg shadow-2xl overflow-hidden">
+                <div className="rounded-lg shadow-2xl overflow-hidden py-16 shadow-none">
                   <h3 className="text-4xl font-bold text-center mb-12 text-purple-400">My Approach</h3>
                   <div className="max-w-3xl mx-auto text-center text-lg text-gray-300">
                     <p className="mb-6">
@@ -545,7 +555,7 @@ export default function HomePage() {
                 <FadeIn delay={200} direction="left">
                   <Card className="bg-gray-800 border-gray-700 text-gray-50 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                     <CardHeader className="flex flex-col items-center text-center">
-                      <Compass className="text-purple-400 mb-4" size={48} />
+                      <Compass className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
                         Product & User Experience Strategy
                       </CardTitle>
@@ -568,7 +578,7 @@ export default function HomePage() {
                 <FadeIn delay={400} direction="right">
                   <Card className="bg-gray-800 border-gray-700 text-gray-50 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                     <CardHeader className="flex flex-col items-center text-center">
-                      <Lightbulb className="text-purple-400 mb-4" size={48} />
+                      <Lightbulb className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
                         Design Thinking & Workshop Facilitation
                       </CardTitle>
@@ -593,7 +603,7 @@ export default function HomePage() {
                 <FadeIn delay={600} direction="left">
                   <Card className="bg-gray-800 border-gray-700 text-gray-50 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                     <CardHeader className="flex flex-col items-center text-center">
-                      <Workflow className="text-purple-400 mb-4" size={48} />
+                      <Workflow className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
                         Optimizing Design Operations (DesignOps)
                       </CardTitle>
@@ -617,7 +627,7 @@ export default function HomePage() {
                 <FadeIn delay={800} direction="right">
                   <Card className="bg-gray-800 border-gray-700 text-gray-50 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                     <CardHeader className="flex flex-col items-center text-center">
-                      <GraduationCap className="text-purple-400 mb-4" size={48} />
+                      <GraduationCap className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
                         Mentoring & Leadership Coaching
                       </CardTitle>
@@ -677,7 +687,7 @@ export default function HomePage() {
             ></div>
             <div className="relative z-10 container mx-auto px-4">
               <FadeIn>
-                <h2 className="text-4xl font-bold mb-12 text-purple-400 text-center">What People Say</h2>
+                <h2 className="text-4xl font-bold mb-12 text-center text-purple-400">What People Say</h2>
               </FadeIn>
               <FadeIn delay={300}>
                 <TestimonialCarousel testimonials={testimonials} autoPlayInterval={6000} /> {/* Updated prop name */}
