@@ -656,9 +656,7 @@ export default function HomePage() {
                     size="lg"
                     className="bg-purple-600 hover:bg-purple-700 text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
                   >
-                    <a href="https://www.behance.net/peterkattan" target="_blank" rel="noopener noreferrer">
-                      View Case Studies
-                    </a>
+                    <Link href="/work">View Case Studies</Link>
                   </Button>
                   <Button
                     asChild
