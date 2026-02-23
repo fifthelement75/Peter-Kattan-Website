@@ -297,18 +297,8 @@ export default function WorkPage() {
         </div>
       </section>
 
-        {/* CTA Section before Footer */}
-        <section className="py-12 md:py-16">
-          <div className="container mx-auto px-4 text-center">
-            <Button
-              asChild
-              size="lg"
-              className="bg-gray-700 hover:bg-gray-600 text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
-            >
-              <Link href="/#contact">Let's Talk</Link>
-            </Button>
-          </div>
-        </section>
+      {/* Footer */}
+      <footer className="bg-gray-900 py-8 border-t border-gray-800">
         <div className="container mx-auto px-4 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Peter Kattan. All rights reserved.</p>
         </div>

@@ -213,10 +213,10 @@ export default function HomePage() {
             </div>
             <div className="relative z-10 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-1000">
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 md:text-5xl">
-                Helping SaaS &amp; tech companies scale their design organizations and ship better products—fractionally.
+                Fractional Head of Design for Series A-C Startups—Ship Better Products, Faster.
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
-                I accelerate product delivery, strengthen design teams, and help founders reach design maturity 6X faster than building in‑house.
+                Design Operations Consulting and Design Maturity Audits for founders, CEOs, and CPOs. I help you accelerate product delivery, build world-class design teams, and achieve design maturity 6X faster than building in-house.
               </p>
               <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
                 <Button
@@ -235,7 +235,7 @@ export default function HomePage() {
           {/* About Section */}
           <section id="about" className="relative py-20 bg-gray-950/90 rounded-lg shadow-2xl overflow-hidden">
             <div
-              className="absolute inset-0 z-0 bg-purple-100 text-purple-100 leading-3"
+              className="absolute inset-0 z-0 bg-purple-100 text-purple-100"
               style={{
                 backgroundImage: 'url("/images/about-parallax-bg.png")',
                 backgroundSize: "cover",
@@ -304,8 +304,7 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* CTA Section after About */}
-          
+          {/* What I Offer Section */}
           <section id="offer" className="relative py-20 rounded-lg shadow-2xl bg-indigo-950 overflow-hidden">
             <div
               className="absolute inset-0 z-0"
@@ -318,7 +317,7 @@ export default function HomePage() {
             ></div>
             <div className="relative z-10 container mx-auto px-4">
               <FadeIn>
-                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">What I Offer</h2>
+                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">Design Operations Consulting & Design Maturity Audit</h2>
               </FadeIn>
 
               <div className="mb-16">
@@ -376,7 +375,7 @@ export default function HomePage() {
               <FadeIn delay={700}>
                 <div className="bg-gray-800 border border-gray-700 rounded-lg p-8 shadow-xl py-14 mb-11">
                   <h3 className="text-3xl font-semibold text-center mb-8 text-purple-400">
-                    Superior to a full-time hire
+                    Why Fractional Head of Design?
                   </h3>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
                     <div className="flex items-start space-x-4">
@@ -693,8 +692,7 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* CTA Section after Testimonials */}
-          
+          {/* Contact Section */}
           <section
             id="contact"
             className="relative py-20 overflow-hidden bg-gray-900/90 shadow-2xl min-h-[50vh] flex items-center"
