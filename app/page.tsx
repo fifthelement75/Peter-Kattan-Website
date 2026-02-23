@@ -557,7 +557,7 @@ export default function HomePage() {
                     <CardHeader className="flex flex-col items-center text-center">
                       <Compass className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
-                        Product & User Experience Strategy
+                        Product &amp; User Experience Strategy (Design  Maturity Audit)
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
@@ -580,7 +580,7 @@ export default function HomePage() {
                     <CardHeader className="flex flex-col items-center text-center">
                       <Lightbulb className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
-                        Design Thinking & Workshop Facilitation
+                        Design Thinking &amp; Workshop Facilitation (Scalability  Planning) 
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
@@ -605,7 +605,7 @@ export default function HomePage() {
                     <CardHeader className="flex flex-col items-center text-center">
                       <Workflow className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
-                        Optimizing Design Operations (DesignOps)
+                        Optimizing Design Operations (DesignOps Setup)
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
