@@ -216,7 +216,7 @@ export default function HomePage() {
                 Helping SaaS &amp; tech companies scale their design organizations and ship better products—fractionally.
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
-                 I help you accelerate product delivery, build world-class design teams, and achieve design maturity 6X faster than building in-house.
+                 I accelerate product delivery, strengthen design teams, and help founders reach design maturity 6X faster than building in‑house.
               </p>
               <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
                 <Button
@@ -528,7 +528,7 @@ export default function HomePage() {
                     <p>
                       {"My ultimate goal is to build sustainable capabilities within your organization, empowering your teams to lead in the evolving tech landscape and drive business growth."}
                     </p>
-                    <p className="text-lg text-neutral-600 mt-4">
+                    <p className="text-lg mt-4 italic">
                       Ideal for founders of Series A–C startups and product leaders needing hands‑on design leadership.
                     </p>
                   </div>
