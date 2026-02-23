@@ -213,10 +213,10 @@ export default function HomePage() {
             </div>
             <div className="relative z-10 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-1000">
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 md:text-5xl">
-                Fractional Head of Design for Series A-C Startups—Ship Better Products, Faster.
+                Helping SaaS &amp; tech companies scale their design organizations and ship better products—fractionally.
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
-                Design Operations Consulting and Design Maturity Audits for founders, CEOs, and CPOs. I help you accelerate product delivery, build world-class design teams, and achieve design maturity 6X faster than building in-house.
+                 I help you accelerate product delivery, build world-class design teams, and achieve design maturity 6X faster than building in-house.
               </p>
               <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
                 <Button
@@ -317,7 +317,7 @@ export default function HomePage() {
             ></div>
             <div className="relative z-10 container mx-auto px-4">
               <FadeIn>
-                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">Design Operations Consulting & Design Maturity Audit</h2>
+                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">What I offer </h2>
               </FadeIn>
 
               <div className="mb-16">
@@ -375,7 +375,7 @@ export default function HomePage() {
               <FadeIn delay={700}>
                 <div className="bg-gray-800 border border-gray-700 rounded-lg p-8 shadow-xl py-14 mb-11">
                   <h3 className="text-3xl font-semibold text-center mb-8 text-purple-400">
-                    Why Fractional Head of Design?
+                    Superior to a full-time hire
                   </h3>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
                     <div className="flex items-start space-x-4">
@@ -526,8 +526,7 @@ export default function HomePage() {
                       to foster a culture of continuous innovation.
                     </p>
                     <p>
-                      My ultimate goal is to build sustainable capabilities within your organization, empowering your
-                      teams to lead in the evolving tech landscape and drive business growth.
+                      {"My ultimate goal is to build sustainable capabilities within your organization, empowering your teams to lead in the evolving tech landscape and drive business growth."}
                     </p>
                   </div>
                 </div>
