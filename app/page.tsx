@@ -225,7 +225,7 @@ export default function HomePage() {
                   className="bg-purple-600 hover:bg-purple-700 text-base sm:text-lg px-6 sm:px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
                 >
                   <Link href="#contact" onClick={(e) => handleScrollToSection(e, "contact")}>
-                    Let's Connect
+                    Let's Talk
                   </Link>
                 </Button>
               </div>
@@ -304,7 +304,22 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* What I Offer Section */}
+          {/* CTA Section after About */}
+          <section className="relative py-12 bg-gray-950/90">
+            <div className="relative z-10 container mx-auto px-4 text-center">
+              <FadeIn>
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-gray-700 hover:bg-gray-600 text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+                >
+                  <Link href="#contact" onClick={(e) => handleScrollToSection(e, "contact")}>
+                    Let's Talk
+                  </Link>
+                </Button>
+              </FadeIn>
+            </div>
+          </section>
           <section id="offer" className="relative py-20 rounded-lg shadow-2xl bg-indigo-950 overflow-hidden">
             <div
               className="absolute inset-0 z-0"
@@ -692,7 +707,22 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* Contact Section */}
+          {/* CTA Section after Testimonials */}
+          <section className="relative py-12 bg-gray-950/90">
+            <div className="relative z-10 container mx-auto px-4 text-center">
+              <FadeIn>
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-gray-700 hover:bg-gray-600 text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+                >
+                  <Link href="#contact" onClick={(e) => handleScrollToSection(e, "contact")}>
+                    Let's Talk
+                  </Link>
+                </Button>
+              </FadeIn>
+            </div>
+          </section>
           <section
             id="contact"
             className="relative py-20 overflow-hidden bg-gray-900/90 shadow-2xl min-h-[50vh] flex items-center"
