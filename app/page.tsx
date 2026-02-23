@@ -718,11 +718,7 @@ export default function HomePage() {
               <div className="max-w-2xl mx-auto text-center space-y-6">
                 <FadeIn delay={200}>
                   <p className="text-lg text-gray-300">
-                    I'm always seeking new opportunities to collaborate with leaders and their teams across various
-                    industries and organizational stages. It begins with an initial conversation, during which I can
-                    learn about your organization's needs and assess the best way to assist you. Feel free to connect
-                    with me on LinkedIn or view my Behance profile to learn more about how my expertise can support your
-                    team in achieving the next level of growth.
+                    I&apos;m always seeking new opportunities to collaborate with leaders, founders, CEOs, CPOs and their teams across various industries and organizational stages. It begins with an initial conversation, during which I can learn about your organization&apos;s needs and assess the best way to assist you. Feel free to connect with me or view my work to learn more about how my expertise can help your team achieve the next level of growth.
                   </p>
                 </FadeIn>
                 <FadeIn delay={400}>
