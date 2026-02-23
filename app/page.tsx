@@ -528,6 +528,9 @@ export default function HomePage() {
                     <p>
                       {"My ultimate goal is to build sustainable capabilities within your organization, empowering your teams to lead in the evolving tech landscape and drive business growth."}
                     </p>
+                    <p className="text-lg text-neutral-600 mt-4">
+                      Ideal for founders of Series A–C startups and product leaders needing hands‑on design leadership.
+                    </p>
                   </div>
                 </div>
               </FadeIn>
