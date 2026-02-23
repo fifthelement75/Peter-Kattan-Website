@@ -235,7 +235,7 @@ export default function HomePage() {
           {/* About Section */}
           <section id="about" className="relative py-20 bg-gray-950/90 rounded-lg shadow-2xl overflow-hidden">
             <div
-              className="absolute inset-0 z-0 bg-purple-100 text-purple-100"
+              className="absolute inset-0 z-0 bg-purple-100 text-purple-100 leading-3"
               style={{
                 backgroundImage: 'url("/images/about-parallax-bg.png")',
                 backgroundSize: "cover",
@@ -305,21 +305,7 @@ export default function HomePage() {
           </section>
 
           {/* CTA Section after About */}
-          <section className="relative py-12 bg-gray-950/90">
-            <div className="relative z-10 container mx-auto px-4 text-center">
-              <FadeIn>
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-gray-700 hover:bg-gray-600 text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
-                >
-                  <Link href="#contact" onClick={(e) => handleScrollToSection(e, "contact")}>
-                    Let's Talk
-                  </Link>
-                </Button>
-              </FadeIn>
-            </div>
-          </section>
+          
           <section id="offer" className="relative py-20 rounded-lg shadow-2xl bg-indigo-950 overflow-hidden">
             <div
               className="absolute inset-0 z-0"
@@ -708,21 +694,7 @@ export default function HomePage() {
           </section>
 
           {/* CTA Section after Testimonials */}
-          <section className="relative py-12 bg-gray-950/90">
-            <div className="relative z-10 container mx-auto px-4 text-center">
-              <FadeIn>
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-gray-700 hover:bg-gray-600 text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
-                >
-                  <Link href="#contact" onClick={(e) => handleScrollToSection(e, "contact")}>
-                    Let's Talk
-                  </Link>
-                </Button>
-              </FadeIn>
-            </div>
-          </section>
+          
           <section
             id="contact"
             className="relative py-20 overflow-hidden bg-gray-900/90 shadow-2xl min-h-[50vh] flex items-center"
