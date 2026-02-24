@@ -212,12 +212,11 @@ export default function HomePage() {
               </video>
             </div>
             <div className="relative z-10 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-1000">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-                I Build Successful Product Design Operations and Team Structures
+              <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 md:text-5xl">
+                Helping SaaS &amp; tech companies scale their design maturity and ship better products — fractionally.
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
-                I guide visionary startups and scale-ups in architecting user-centric products, empowering
-                high-performing teams, and optimizing operations for unparalleled market differentiation.
+                 I partner with founders and product leaders to transform design organizations, deliver faster, and elevate product experience — without the cost and long onboarding of a full‑time hire.
               </p>
               <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
                 <Button
@@ -226,7 +225,7 @@ export default function HomePage() {
                   className="bg-purple-600 hover:bg-purple-700 text-base sm:text-lg px-6 sm:px-8 py-3 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
                 >
                   <Link href="#contact" onClick={(e) => handleScrollToSection(e, "contact")}>
-                    Let's Connect
+                    Let's Talk
                   </Link>
                 </Button>
               </div>
@@ -259,7 +258,7 @@ export default function HomePage() {
                 </FadeIn>
                 <FadeIn direction="right" delay={400}>
                   <div>
-                    <h2 className="text-4xl font-bold mb-6 text-purple-400">About Me</h2>
+                    <h2 className="text-4xl font-bold mb-6 text-purple-500">About Me</h2>
                     <p className="text-lg mb-4 text-neutral-600">
                       With a proven track record in leading transformative design initiatives and a deep understanding
                       of emerging technologies, I partner with ambitious startups and scale-ups to navigate complex
@@ -318,7 +317,7 @@ export default function HomePage() {
             ></div>
             <div className="relative z-10 container mx-auto px-4">
               <FadeIn>
-                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">What I Offer</h2>
+                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">What I offer </h2>
               </FadeIn>
 
               <div className="mb-16">
@@ -440,7 +439,7 @@ export default function HomePage() {
               {/* How It Works Section - Now part of What I Offer */}
               <div className="rounded-lg shadow-2xl overflow-hidden py-16 shadow-none">
                 <FadeIn>
-                  <h3 className="text-4xl font-bold text-center mb-12 text-purple-400">How It Works</h3>
+                  <h3 className="text-4xl font-bold text-center mb-12 text-purple-500">How It Works</h3>
                 </FadeIn>
                 <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 max-w-full mx-auto justify-center">
                   <FadeIn delay={200}>
@@ -512,7 +511,7 @@ export default function HomePage() {
               {/* My Approach Section - Moved here */}
               <FadeIn delay={800}>
                 <div className="rounded-lg shadow-2xl overflow-hidden py-16 shadow-none">
-                  <h3 className="text-4xl font-bold text-center mb-12 text-purple-400">My Approach</h3>
+                  <h3 className="text-4xl font-bold text-center mb-12 text-purple-500">My Approach</h3>
                   <div className="max-w-3xl mx-auto text-center text-lg text-gray-300">
                     <p className="mb-6">
                       I blend strategic foresight with hands-on execution to transform your organization's innovation
@@ -527,8 +526,10 @@ export default function HomePage() {
                       to foster a culture of continuous innovation.
                     </p>
                     <p>
-                      My ultimate goal is to build sustainable capabilities within your organization, empowering your
-                      teams to lead in the evolving tech landscape and drive business growth.
+                      {"My ultimate goal is to build sustainable capabilities within your organization, empowering your teams to lead in the evolving tech landscape and drive business growth."}
+                    </p>
+                    <p className="text-lg mt-4 italic">
+                      Ideal for founders of Series A–C startups and product leaders needing hands‑on design leadership.
                     </p>
                   </div>
                 </div>
@@ -549,7 +550,7 @@ export default function HomePage() {
             ></div>
             <div className="relative z-10 container mx-auto px-4">
               <FadeIn>
-                <h2 className="text-4xl font-bold text-center mb-12 text-purple-400">My Services</h2>
+                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">What I Deliver</h2>
               </FadeIn>
               <div className="grid md:grid-cols-2 gap-8">
                 <FadeIn delay={200} direction="left">
@@ -557,7 +558,7 @@ export default function HomePage() {
                     <CardHeader className="flex flex-col items-center text-center">
                       <Compass className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
-                        Product & User Experience Strategy
+                        Product &amp; User Experience Strategy (Design  Maturity Audit)
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
@@ -580,7 +581,7 @@ export default function HomePage() {
                     <CardHeader className="flex flex-col items-center text-center">
                       <Lightbulb className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
-                        Design Thinking & Workshop Facilitation
+                        Design Thinking &amp; Workshop Facilitation (Scalability  Planning) 
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
@@ -605,7 +606,7 @@ export default function HomePage() {
                     <CardHeader className="flex flex-col items-center text-center">
                       <Workflow className="mb-4 text-purple-300" size={48} />
                       <CardTitle className="text-2xl font-semibold text-purple-300">
-                        Optimizing Design Operations (DesignOps)
+                        Optimizing Design Operations (DesignOps Setup)
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
@@ -712,16 +713,12 @@ export default function HomePage() {
             {/* Content Overlay */}
             <div className="relative z-10 container mx-auto px-4 text-center">
               <FadeIn>
-                <h2 className="text-4xl font-bold mb-12 text-purple-400">Let's Connect</h2>
+                <h2 className="text-4xl font-bold mb-12 text-purple-400">Let&apos;s Talk</h2>
               </FadeIn>
               <div className="max-w-2xl mx-auto text-center space-y-6">
                 <FadeIn delay={200}>
                   <p className="text-lg text-gray-300">
-                    I'm always seeking new opportunities to collaborate with leaders and their teams across various
-                    industries and organizational stages. It begins with an initial conversation, during which I can
-                    learn about your organization's needs and assess the best way to assist you. Feel free to connect
-                    with me on LinkedIn or view my Behance profile to learn more about how my expertise can support your
-                    team in achieving the next level of growth.
+                    I&apos;m always seeking new opportunities to collaborate with leaders, founders, CEOs, CPOs and their teams across various industries and organizational stages. It begins with an initial conversation, during which I can learn about your organization&apos;s needs and assess the best way to assist you. Feel free to connect with me or view my work to learn more about how my expertise can help your team achieve the next level of growth.
                   </p>
                 </FadeIn>
                 <FadeIn delay={400}>

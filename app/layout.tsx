@@ -8,20 +8,28 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Peter Kattan - Product Design Strategy & Team Operations Expert",
+  title: "Fractional Head of Design | Design Operations Consulting | Peter Kattan",
   description:
-    "I help startups and scale-ups build successful product design operations, empower high-performing teams, and optimize user-centric strategies with GenAI integration. Expert in design thinking, UX strategy, and leadership coaching.",
+    "Fractional Head of Design and Design Operations Consulting for Series A-C startups. I help founders, CEOs, and CPOs build world-class design teams, optimize design maturity, and accelerate product delivery. Design Maturity Audit included.",
   keywords: [
+    "fractional head of design",
+    "design operations consulting",
+    "design maturity audit",
     "product design strategy",
     "design operations",
     "team enablement",
-    "startup consultant",
+    "startup design consultant",
     "UX strategy",
     "design thinking",
     "leadership coaching",
     "GenAI integration",
     "user experience",
     "product strategy",
+    "design leadership",
+    "CPO consulting",
+    "series a startup",
+    "series b startup",
+    "series c startup",
   ],
   authors: [{ name: "Peter Kattan" }],
   creator: "Peter Kattan",
@@ -41,9 +49,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://peterkattan.com", // Replace with your actual domain
-    title: "Peter Kattan - Product Design Strategy & Team Operations Expert",
+    title: "Fractional Head of Design & Design Operations Consulting for Startups",
     description:
-      "I help startups and scale-ups build successful product design operations, empower high-performing teams, and optimize user-centric strategies with GenAI integration.",
+      "Get Design Operations Consulting and Design Maturity Audits for Series A-C startups. Fractional Head of Design services for founders, CEOs, and product leaders. Accelerate design maturity 6X faster.",
     siteName: "Peter Kattan",
     images: [
       {
@@ -56,9 +64,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Peter Kattan - Product Design Strategy & Team Operations Expert",
+    title: "Fractional Head of Design | Design Operations Consulting",
     description:
-      "I help startups and scale-ups build successful product design operations, empower high-performing teams, and optimize user-centric strategies with GenAI integration.",
+      "Design Operations Consulting and Design Maturity Audit for Series A-C startups. Fractional Head of Design for founders and CPOs seeking to accelerate product delivery.",
     creator: "@fifth_element75",
     images: ["/images/og-image.png"],
   },
@@ -100,9 +108,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Peter Kattan",
-              jobTitle: "Product Design Strategy & Operations Expert",
+              jobTitle: "Fractional Head of Design | Design Operations Consultant",
               description:
-                "Expert in product design strategy, team enablement, and operational excellence with GenAI integration for startups and scale-ups.",
+                "Fractional Head of Design and Design Operations Consulting expert specializing in Design Maturity Audits for Series A-C startups, founders, CEOs, and product leaders.",
               url: "https://peterkattan.com", // Replace with your actual domain
               sameAs: [
                 "https://linkedin.com/in/peterkattan",
@@ -110,6 +118,9 @@ export default function RootLayout({
                 "https://www.behance.net/peterkattan",
               ],
               knowsAbout: [
+                "Fractional Head of Design",
+                "Design Operations Consulting",
+                "Design Maturity Audit",
                 "Product Design Strategy",
                 "Design Operations",
                 "Team Enablement",
@@ -118,12 +129,32 @@ export default function RootLayout({
                 "Leadership Coaching",
                 "GenAI Integration",
               ],
-              offers: {
-                "@type": "Service",
-                name: "Product Design Strategy Consulting",
-                description:
-                  "Comprehensive design strategy, team operations, and leadership coaching services for startups and scale-ups.",
-              },
+              offers: [
+                {
+                  "@type": "Service",
+                  name: "Fractional Head of Design",
+                  description:
+                    "Part-time strategic design leadership for startups and scale-ups. Provide expert guidance on design direction, team building, and operational excellence.",
+                  areaServed: ["US", "Canada"],
+                  priceRange: "$$",
+                },
+                {
+                  "@type": "Service",
+                  name: "Design Operations Consulting",
+                  description:
+                    "Optimize your design processes, workflows, and team structure. Design maturity audits help identify gaps and accelerate growth.",
+                  areaServed: ["US", "Canada"],
+                  priceRange: "$$",
+                },
+                {
+                  "@type": "Service",
+                  name: "Design Maturity Audit",
+                  description:
+                    "Comprehensive assessment of your design maturity and organizational readiness. Tailored recommendations for Series A-C startups.",
+                  areaServed: ["US", "Canada"],
+                  priceRange: "$$",
+                },
+              ],
             }),
           }}
         />
