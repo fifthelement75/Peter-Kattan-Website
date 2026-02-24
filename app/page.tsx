@@ -550,7 +550,7 @@ export default function HomePage() {
             ></div>
             <div className="relative z-10 container mx-auto px-4">
               <FadeIn>
-                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">Fractional Services</h2>
+                <h2 className="text-4xl font-bold text-center mb-12 text-purple-500">What I Deliver</h2>
               </FadeIn>
               <div className="grid md:grid-cols-2 gap-8">
                 <FadeIn delay={200} direction="left">
