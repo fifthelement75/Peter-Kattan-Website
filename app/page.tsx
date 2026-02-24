@@ -216,7 +216,7 @@ export default function HomePage() {
                 Helping SaaS &amp; tech companies scale their design organizations and ship better products—fractionally.
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
-                 I accelerate product delivery, strengthen design teams, and help founders reach design maturity 6X faster than building in‑house.
+                 I accelerate product delivery, strengthen design teams, and help founders reach design maturity faster than building in-house.
               </p>
               <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
                 <Button
