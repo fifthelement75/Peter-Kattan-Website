@@ -213,10 +213,10 @@ export default function HomePage() {
             </div>
             <div className="relative z-10 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-1000">
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 md:text-5xl">
-                Helping SaaS &amp; tech companies scale their design organizations and ship better products fractionally.
+                Helping SaaS &amp; tech companies scale their design maturity and ship better products — fractionally.
               </h1>
               <p className="text-lg sm:text-xl text-gray-300 mb-6 sm:mb-8 animate-in fade-in slide-in-from-bottom duration-1000 delay-300">
-                 I accelerate product delivery, strengthen design teams, and help founders reach design maturity faster than building in-house.
+                 I partner with founders and product leaders to transform design organizations, deliver faster, and elevate product experience — without the cost and long onboarding of a full‑time hire.
               </p>
               <div className="animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
                 <Button
