@@ -149,8 +149,8 @@ export default function HomePage() {
                     <span className="sr-only">Toggle navigation menu</span>
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="bg-gray-950 border-gray-800 text-gray-50 w-[250px]">
-                  <nav className="flex flex-col gap-6 pt-8">
+                <SheetContent side="right" className="border-gray-800 text-gray-50 w-[250px]">
+                  <nav className="flex flex-col gap-8 pt-12">
                     <Link
                       href="#about"
                       onClick={(e) => handleScrollToSection(e, "about")}
