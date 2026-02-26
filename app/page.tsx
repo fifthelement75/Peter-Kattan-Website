@@ -154,35 +154,35 @@ export default function HomePage() {
                     <Link
                       href="#about"
                       onClick={(e) => handleScrollToSection(e, "about")}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       About
                     </Link>
                     <Link
                       href="#offer"
                       onClick={(e) => handleScrollToSection(e, "offer")}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       What I Offer
                     </Link>
                     <Link
                       href="#services"
                       onClick={(e) => handleScrollToSection(e, "services")}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       Services
                     </Link>
                     <Link
                       href="/work"
                       onClick={() => setIsSheetOpen(false)}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       Work
                     </Link>
                     <Link
                       href="#contact"
                       onClick={(e) => handleScrollToSection(e, "contact")}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       Contact
                     </Link>
