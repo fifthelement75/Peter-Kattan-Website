@@ -149,40 +149,40 @@ export default function HomePage() {
                     <span className="sr-only">Toggle navigation menu</span>
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="bg-gray-950 border-gray-800 text-gray-50 w-[250px]">
-                  <nav className="flex flex-col gap-6 pt-8">
+                <SheetContent side="right" className="bg-indigo-950 border-gray-800 text-gray-50 w-[250px]">
+                  <nav className="flex flex-col gap-8 pt-12">
                     <Link
                       href="#about"
                       onClick={(e) => handleScrollToSection(e, "about")}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       About
                     </Link>
                     <Link
                       href="#offer"
                       onClick={(e) => handleScrollToSection(e, "offer")}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       What I Offer
                     </Link>
                     <Link
                       href="#services"
                       onClick={(e) => handleScrollToSection(e, "services")}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       Services
                     </Link>
                     <Link
                       href="/work"
                       onClick={() => setIsSheetOpen(false)}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       Work
                     </Link>
                     <Link
                       href="#contact"
                       onClick={(e) => handleScrollToSection(e, "contact")}
-                      className="text-xl hover:text-purple-400 transition-colors"
+                      className="text-xl hover:text-purple-400 transition-colors ml-6"
                     >
                       Contact
                     </Link>
