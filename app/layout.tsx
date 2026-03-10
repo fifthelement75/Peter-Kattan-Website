@@ -83,7 +83,61 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://peterkattan.com", // Replace with your actual domain
   },
-    generator: 'v0.app'
+  generator: 'v0.app',
+  other: {
+    'application/ld+json': JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Peter Kattan",
+      jobTitle: "Fractional Head of Design | Design Operations Consultant",
+      description:
+        "Fractional Head of Design and Design Operations Consulting expert specializing in Design Maturity Audits for Series A-C startups, founders, CEOs, and product leaders.",
+      url: "https://peterkattan.com",
+      sameAs: [
+        "https://linkedin.com/in/peterkattan",
+        "https://x.com/fifth_element75",
+        "https://www.behance.net/peterkattan",
+      ],
+      knowsAbout: [
+        "Fractional Head of Design",
+        "Design Operations Consulting",
+        "Design Maturity Audit",
+        "Product Design Strategy",
+        "Design Operations",
+        "Team Enablement",
+        "UX Strategy",
+        "Design Thinking",
+        "Leadership Coaching",
+        "GenAI Integration",
+      ],
+      offers: [
+        {
+          "@type": "Service",
+          name: "Fractional Head of Design",
+          description:
+            "Part-time strategic design leadership for startups and scale-ups. Provide expert guidance on design direction, team building, and operational excellence.",
+          areaServed: ["US", "Canada"],
+          priceRange: "$$",
+        },
+        {
+          "@type": "Service",
+          name: "Design Operations Consulting",
+          description:
+            "Optimize your design processes, workflows, and team structure. Design maturity audits help identify gaps and accelerate growth.",
+          areaServed: ["US", "Canada"],
+          priceRange: "$$",
+        },
+        {
+          "@type": "Service",
+          name: "Design Maturity Audit",
+          description:
+            "Comprehensive assessment of your design maturity and organizational readiness. Tailored recommendations for Series A-C startups.",
+          areaServed: ["US", "Canada"],
+          priceRange: "$$",
+        },
+      ],
+    }),
+  },
 }
 
 export default function RootLayout({
@@ -100,64 +154,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
-        {/* Structured Data for SEO */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Peter Kattan",
-              jobTitle: "Fractional Head of Design | Design Operations Consultant",
-              description:
-                "Fractional Head of Design and Design Operations Consulting expert specializing in Design Maturity Audits for Series A-C startups, founders, CEOs, and product leaders.",
-              url: "https://peterkattan.com", // Replace with your actual domain
-              sameAs: [
-                "https://linkedin.com/in/peterkattan",
-                "https://x.com/fifth_element75",
-                "https://www.behance.net/peterkattan",
-              ],
-              knowsAbout: [
-                "Fractional Head of Design",
-                "Design Operations Consulting",
-                "Design Maturity Audit",
-                "Product Design Strategy",
-                "Design Operations",
-                "Team Enablement",
-                "UX Strategy",
-                "Design Thinking",
-                "Leadership Coaching",
-                "GenAI Integration",
-              ],
-              offers: [
-                {
-                  "@type": "Service",
-                  name: "Fractional Head of Design",
-                  description:
-                    "Part-time strategic design leadership for startups and scale-ups. Provide expert guidance on design direction, team building, and operational excellence.",
-                  areaServed: ["US", "Canada"],
-                  priceRange: "$$",
-                },
-                {
-                  "@type": "Service",
-                  name: "Design Operations Consulting",
-                  description:
-                    "Optimize your design processes, workflows, and team structure. Design maturity audits help identify gaps and accelerate growth.",
-                  areaServed: ["US", "Canada"],
-                  priceRange: "$$",
-                },
-                {
-                  "@type": "Service",
-                  name: "Design Maturity Audit",
-                  description:
-                    "Comprehensive assessment of your design maturity and organizational readiness. Tailored recommendations for Series A-C startups.",
-                  areaServed: ["US", "Canada"],
-                  priceRange: "$$",
-                },
-              ],
-            }),
-          }}
-        />
+
       </head>
       <body className={inter.className}>
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
